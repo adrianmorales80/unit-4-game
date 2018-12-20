@@ -1,0 +1,9 @@
+body.background {
+    background-image: url(../images/candy_crush_bg.jpg);
+    background-size: cover;
+    overflow: visible;
+}
+h1, #crystal-font {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 5em
+}
