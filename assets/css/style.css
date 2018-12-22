@@ -1,6 +1,9 @@
 body.background {
+    width:100%; height:100%; 
+    background: #fff center center no-repeat;
     background-image: url(../images/candy_crush_bg.jpg);
-    background-size: cover;
+    background-size: 100% cover auto;
+    background-repeat: no-repeat;
     overflow: visible;
 }
 h1, #crystal-font {

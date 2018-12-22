@@ -10,8 +10,6 @@ $(document).ready(function(){
     var win = 0;
     var lose = 0;
 
-    //Try adding id, clases and images with jquery BEFORE SUBMISSION
-
     //Display initial Target Score, My Score, Wins, Losses
     $("#target-score").text(targetScore);
     $("#my-score").text(myScore);

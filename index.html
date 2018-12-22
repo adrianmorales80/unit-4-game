@@ -21,14 +21,14 @@
 
 <body class="background">
   <!--Top of the Page-->
-  <div class="container mb-5 mt-4">
+  <div class="container-fluid mb-5 mt-4">
     <div class="row">
-      <h1 id="crystal-font" class="col-12 text-center text-white">Crystal Collector</h1>
+      <h1 id="crystal-font" class="col-sm-12 text-center text-white">Crystal Collector</h1>
     </div>
   </div>
   <!--Instructions-->
-  <div class="container d-flex flex-row">
-    <div class="row col-4 card card-body">
+  <div class="container d-sm-flex flex-row">
+    <div class="card card-body col-sm-5 mb-2">
       <h5 class="card-title">Instructions</h5>
       <ol class="list-group">
         <li class="list-group-item"><strong>1.</strong> You will be given a target score at the start of the game</li>
@@ -42,59 +42,56 @@
       </ol>
     </div>
     <!--Container for Crysals Score Keeping-->
-    <div class="d-flex flex-column">
+    <div class="d-sm-flex flex-column">
       <!--Crystals-->
       <div class="container mb-5 all-crystals">
-        <div class=" row card-group justify-content-center">
-          <div id="blue-crystal" class="card col-2" data-blue="0">
+        <div class="row card-group justify-content-center">
+          <div id="blue-crystal" class="card col-sm-2" data-blue="0">
             <img class="card-img" src="assets/images/blue_crystal.png" alt="Card image cap">
           </div>
-          <div id="green-crystal" class="card col-2" value="0">
+          <div id="green-crystal" class="card col-sm-2" value="0">
             <img class="card-img" src="assets/images/green_crystal.png" alt="Card image cap">
           </div>
-          <div id="red-crystal" class="card col-2" value="0">
+          <div id="red-crystal" class="card col-sm-2" value="0">
             <img class="card-img" src="assets/images/red_crystal.png" alt="Card image">
           </div>
-          <div id="yellow-crystal" class="card col-2" value="0">
+          <div id="yellow-crystal" class="card col-sm-2" value="0">
             <img class="card-img" src="assets/images/yellow_crystal.png" alt="Card image">
           </div>
         </div>
       </div>
       <!--Target/Your Score-->
-      <div class="container">
-        <div class="row card-group d-flex align-items-center justify-content-center">
-          <div class="card text-white bg-primary mb-4 mr-3" style="max-width: 18rem;">
+      <div class="container-fluid">
+        <div class="row card-group d-sm-flex align-items-center justify-content-center">
+          <div class="card text-white bg-primary mb-2 mr-3 ml-3" style="max-width: 18rem;">
             <div class="card-header">Target score</div>
             <div class="card-body">
               <p id="target-score" class="card-text" value="0"></p>
             </div>
           </div>
-          <div class="card text-white bg-warning mb-4" style="max-width: 18rem;">
+          <div class="card text-white bg-warning mb-2 mr-3 ml-3" style="max-width: 18rem;">
             <div class="card-header">My Score</div>
             <div class="card-body">
               <p id="my-score" class="card-text" value="0"></p>
             </div>
           </div>
         </div>
-      </div>
-      <!--Win/Losses-->
-      <div class="container">
-        <div class="row card-group d-flex align-items-center justify-content-center">
-          <div class="card text-white bg-success mb-3 mr-3" style="max-width: 18rem;">
-            <div class="card-header">Wins</div>
-            <div class="card-body">
-              <p id="wins" class="card-text" value="0"></p>
+        <div class="row card-group d-sm-flex align-items-center justify-content-center">
+            <div class="card text-white bg-success mb-2 mr-3 ml-3" style="max-width: 18rem;">
+              <div class="card-header">Wins</div>
+              <div class="card-body">
+                <p id="wins" class="card-text" value="0"></p>
+              </div>
+            </div>
+            <div class="card text-white bg-danger mb-2 mr-3 ml-3" style="max-width: 18rem;">
+              <div class="card-header">Losses</div>
+              <div class="card-body">
+                <p id="losses" class="card-text" value="0"></p>
+              </div>
             </div>
           </div>
-          <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
-            <div class="card-header">Losses</div>
-            <div class="card-body">
-              <p id="losses" class="card-text" value="0"></p>
-            </div>
-          </div>
-        </div>
       </div>
-      <!-- End of container for Win/Losses-->
+      <!-- End of container for ScoreKeeping-->
     </div>
     <!-- End of container for Crystals and Scorekeeping-->
   </div>
